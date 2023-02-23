@@ -1,6 +1,5 @@
 package com.proj252.AIstopwatch.proj252.u_service
 
-import com.proj252.AIstopwatch.proj252.u_domain.Alarm
 import com.proj252.AIstopwatch.proj252.u_dto.stopwatch.AlarmDto
 import com.proj252.AIstopwatch.proj252.u_repository.SdjAlarmRepo
 import org.springframework.beans.factory.annotation.Autowired

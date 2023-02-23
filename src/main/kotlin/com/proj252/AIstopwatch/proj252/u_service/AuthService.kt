@@ -1,7 +1,5 @@
 package com.proj252.AIstopwatch.proj252.u_service
 
-import com.proj252.AIstopwatch.proj252.u_domain.Member
-import com.proj252.AIstopwatch.proj252.u_domain.CustomUser
 import com.proj252.AIstopwatch.proj252.u_dto.auth.RegisterDto
 import com.proj252.AIstopwatch.proj252.u_dto.auth.SigninDto
 import com.proj252.AIstopwatch.proj252.u_repository.SdjMemberRepo

@@ -1,8 +1,5 @@
 package com.proj252.AIstopwatch.proj252.u_service
 
-import com.proj252.AIstopwatch.proj252.u_domain.TmpChangeTime
-import com.proj252.AIstopwatch.proj252.u_domain.TmpReport
-import com.proj252.AIstopwatch.proj252.u_domain.TmpWarnTime
 import com.proj252.AIstopwatch.proj252.u_repository.SdjTmpReportRepo
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
