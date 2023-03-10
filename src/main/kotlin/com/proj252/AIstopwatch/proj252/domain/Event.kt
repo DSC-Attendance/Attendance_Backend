@@ -8,11 +8,15 @@ data class Event(
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Long,
 
-    @Column(name = "time")
-    val time: Date,
+    @Column(name = "next_schedule")
+    val nextSchedule: Date,
+    @Column(name = "name")
+    val name: String,
+    @Column(name = "rule")
+    val rule: Int,
+    @Column(name = "code")
+    val code: String,
 
-    @ManyToOne @JoinColumn(name = "subject_name")
-    val subject: Subject,
-    @OneToOne(mappedBy = "attendance", cascade = [CascadeType.ALL])
-    private val attendance: Attendance,
+    @ManyToOne @JoinColumn(name = "group_id")
+    val group: Group,
 )

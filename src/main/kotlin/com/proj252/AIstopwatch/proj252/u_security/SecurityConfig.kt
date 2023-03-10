@@ -1,6 +1,5 @@
 package com.proj252.AIstopwatch.proj252.u_security
 
-import com.proj252.AIstopwatch.proj252.u_service.GoogleOAuth2UserService
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.security.config.annotation.web.builders.HttpSecurity

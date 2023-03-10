@@ -8,13 +8,11 @@ data class Group(
 
     @Column(name = "name")
     val name: String,
+    @Column(name = "notification")
+    val notification: String,
 
-    @OneToMany(mappedBy = "host", cascade = [CascadeType.ALL])
-    var hosts: MutableList<Host>,
-    @OneToMany(mappedBy = "mate", cascade = [CascadeType.ALL])
-    var mates: MutableList<Mate>,
-    @OneToMany(mappedBy = "subject", cascade = [CascadeType.ALL])
-    var subjects: MutableList<Subject>,
-    @OneToOne(mappedBy = "notification", cascade = [CascadeType.ALL])
-    private val notification: Notification,
+    @OneToMany(mappedBy = "event", cascade = [CascadeType.ALL])
+    var events: MutableList<Event>,
+    @OneToMany(mappedBy = "related_user", cascade = [CascadeType.ALL])
+    var relatedUsers: MutableList<RelatedUser>,
 )
